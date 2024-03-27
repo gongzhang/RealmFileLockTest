@@ -2,8 +2,8 @@
 
 This project demonstrates a specific issue encountered with Realm on visionOS. The app will 100% crash with either a 0xdead10cc error or a RUNNINGBOARD 3735883980 error upon entering the background, provided the following conditions are met:
 
-1. The app utilizes @ObservedResults or any other Realm observation object.
-2. The realm file is located in an App Group container.
+1. The app utilizes **`@ObservedResults` or any other Realm observation object**.
+2. The realm file is **located in an App Group container**.
 3. The app is running on a physical Vision Pro device, not on a simulator.
 4. The app is a native visionOS app, rather than an compatible iOS app.
 5. The Xcode debugger is not attached to the app.
